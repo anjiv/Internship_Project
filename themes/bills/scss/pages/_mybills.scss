@@ -1,0 +1,40 @@
+// Detail page
+.group-left {
+  img{
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .field__label{
+    font-size: 23px;
+    padding: 10px;
+  }
+  .field--name-field-image{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.group-right{
+  padding: 10px;
+  .field--name-field-category{
+    .field__item{
+      padding:10px;
+    }
+    .field__label{
+      font-weight: bold;
+    }
+  }
+  .field--name-field-amount{
+    .field__label{
+      font-weight:bold;
+    }
+    .field__item{
+      padding: 20px;
+    }
+  }
+  .field--name-field-reimbursements{
+    .field__item{
+      padding:20px;
+    }
+  }
+}

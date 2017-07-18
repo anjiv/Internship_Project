@@ -1,0 +1,38 @@
+// Reimbursement table headings
+.header-wrapper{
+  display: flex;
+  width: 100%;
+  border:1px solid #C0C0C0;
+  background-color: #D3D3D3;
+  > *{
+    flex:1;
+    font-weight: 600;
+    font-size:15px;
+    padding: 10px;
+    border-right: 1px solid #C0C0C0;
+  }
+}
+// Reimbursement entries
+.view-reimbursement-list{
+  padding: 25px;
+  .views-row{
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+    border:1px solid #C0C0C0;
+    > *{
+      flex:1;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 10px;
+      border-right: 1px solid #C0C0C0;
+    }
+    &:hover{
+      background-color:rgba(63,81,181,0.2);
+      transition: all 200ms cubic-bezier(0.16, 0, 0.82, 0.99);
+    }
+  }
+  .views-field-title a{
+    color: black;
+  }
+}

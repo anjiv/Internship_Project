@@ -1,0 +1,20 @@
+global-styling:
+  version: VERSION
+  css:
+    style:
+      css/styles.css: {}
+
+  js:
+    js/script.js: {}
+
+  dependencies:
+    - core/jquery
+    - core/jquery.ui.dialog
+
+hopscotch-styling:
+  version: VERSION
+  js:
+    js/my_first_tour.js: {}
+
+  dependencies:
+    - core/jquery

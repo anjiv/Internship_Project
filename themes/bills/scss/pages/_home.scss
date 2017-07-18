@@ -1,0 +1,82 @@
+// Masonry Blocks
+.bills-container {
+  .views-content {
+    float: left;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    border: 3px solid black;
+    background: #a8a8a8;
+  }
+  .views-row{
+    @include breakpoint($mobile){
+      width: 80%;
+      margin: 10px  1.666667%;
+      float: left;
+      background: #fff;
+      padding: 10px;
+      position: relative;
+    }
+    @include breakpoint($tablet){
+      width: 45%;
+      margin: 10px  1.666667%;
+      float: left;
+      background: #fff;
+      padding: 10px;
+      position: relative;
+    }
+    @include breakpoint($desktop){
+      width: 30%;
+      margin: 10px  1.666667%;
+      float: left;
+      background: #fff;
+      padding: 10px;
+      position: relative;
+    }
+  }
+  .views-field-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    a{
+      color:  #d63333;
+    }
+  }
+  .views-field-field-image img{
+    max-width: 100%;
+  }
+  .views-field-field-amount{
+    box-shadow: 0 2px 0 #8d9292;
+    position: relative;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    text-decoration: none;
+    background: #8d9292;
+    &:hover{
+      color:black;
+      transition: all 300ms cubic-bezier(0.16, 0, 0.82, 0.99);
+      background-color: #d63333;
+    }
+  }
+  .view-content{
+    overflow: hidden;
+    padding-top: 20px;
+  }
+  .views-field-uid{
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px;
+  }
+  .views-field-uid a{
+    color: #3b444b;
+    font-weight: 200;
+  }
+}

@@ -1,0 +1,25 @@
+// Import for importing breakpoint-sass
+@import '../node_modules/breakpoint-sass/stylesheets/breakpoint';
+
+/**
+ * Basic style partials import for the app
+ */
+
+// Utilities import
+
+@import 'utilities/reset';
+@import 'utilities/media';
+@import 'utilities/mixin';
+
+// Components Import
+@import 'components/header';
+@import 'components/layout';
+@import 'components/footer';
+@import 'components/sidebar';
+
+// Page specific partials
+@import 'pages/home';
+@import 'pages/budget';
+@import 'pages/mybills';
+@import 'pages/reimbursements';
+

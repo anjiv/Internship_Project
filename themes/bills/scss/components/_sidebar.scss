@@ -1,0 +1,73 @@
+// Category Sidebar
+#sidebar{
+  @include breakpoint($mobile){
+    position: fixed;
+    right: 0;
+    z-index: 2;
+    width:80%;
+    background: white;
+    top: 58px;
+    right: -600px;
+    transition: right 0.3s ease;
+    &.opened{
+      right: 0;
+    }
+  }
+  @include breakpoint($tablet){
+    position:relative;
+    top: 0px;
+    right:0px;
+    padding:0px;
+    width: 100%;
+  }
+  flex: 1;
+  background-color: #fcfcfc;
+}
+.block-views-blockcategory-block-1{
+  >h2{
+    @include breakpoint($mobile){
+      background: #4f5151;
+      color: #fff;
+      line-height: 50px;
+      padding: 0 70px 0 23px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: 600;
+      font-size:20px
+    }
+    @include breakpoint($tablet){
+      background: #4f5151;
+      color: #fff;
+      line-height: 50px;
+      padding: 0 70px;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-weight: 600;
+      font-size:20px
+    }
+  }
+  .view-category{
+    .view-content{
+      a{
+        padding: 7px 15px;
+        display: block;
+        color:#040404;
+        font-size: 17px;
+        position: relative;
+        border-radius: 10px;
+        line-height: 44px;
+        text-decoration: none;
+        background: white;
+        &:hover{
+         background: #3b444b;
+         opacity: 0.7;
+         color:white;
+         transition: all 200ms cubic-bezier(0.16, 0, 0.82, 0.99);
+       }
+     }
+   }
+   .views-row{
+    margin: 8px;
+  }
+}
+}

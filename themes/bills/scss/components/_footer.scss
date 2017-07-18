@@ -1,0 +1,38 @@
+#main_footer{
+  width: 100%;
+  background: black;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  text-align: end;
+  a{
+    color: red;
+  }
+}
+a.return-to-top{
+  position: fixed;
+  bottom: 55px;
+  right: 70px;
+  color:black;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  transition: all 0.3s ease;
+}
+i.icon-chevron-up{
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  transition: all 0.3s ease;
+}
+.return-to-top:hover {
+  background: black;
+  i{
+    color: #fff;
+    top: 5px;
+  }
+}
